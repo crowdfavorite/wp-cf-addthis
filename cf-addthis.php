@@ -65,7 +65,8 @@ function cfat_get_share($args = '') {
 		// Service keyword (see cfat_get_url above)
 		'service' => '',
 		'attributes' => array(
-			'onclick' => 'window.open(this.href, \'addthis\', \'height=500,width=490,menubar=no,toolbar=no,location=no\'); return false;'
+			'onclick' => 'window.open(this.href, \'addthis\', \'height=500,width=490,menubar=no,toolbar=no,location=no\'); return false;',
+			'rel' => 'nofollow'
 		)
 	);
 
