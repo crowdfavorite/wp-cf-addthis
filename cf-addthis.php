@@ -58,11 +58,12 @@ function cfat_get_share($args = '') {
 	$default_args = array(
 		// URL to share
 		'url' => get_permalink(),
+		// Optional.
+		'title' => get_the_title(),
 		// Link text
 		'text' => __('Share', 'cf-addthis'),
+		// Service keyword (see cfat_get_url above)
 		'service' => '',
-		// Optional. Will use <title> tag otherwise.
-		'title' => '',
 		'attributes' => array(
 			'onclick' => 'window.open(this.href, \'addthis\', \'height=500,width=490,menubar=no,toolbar=no,location=no\'); return false;'
 		)
