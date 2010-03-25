@@ -32,7 +32,7 @@ function cfat_get_url($url, $title = '', $service = '') {
 	
 	$api_url = apply_filters('cfat_api_url', 'http://api.addthis.com/oexchange/0.8/');
 	$endpoint_generic = apply_filters('cfat_api_endpoint_generic', $api_url.'offer%s', $api_url);
-	$endpoint_service = apply_filters('cfat_api_endpoint_service', $api_url.'/forward/%s/offer%s', $api_url);
+	$endpoint_service = apply_filters('cfat_api_endpoint_service', $api_url.'forward/%s/offer%s', $api_url);
 	
 	// Decide which endpoint to hit
 	switch ($service) {
