@@ -59,7 +59,7 @@ function cfat_get_share($args = '') {
 		// URL to share
 		'url' => get_permalink(),
 		// Link text
-		'text' => 'Share',
+		'text' => __('Share', 'cf-addthis'),
 		'service' => '',
 		// Optional. Will use <title> tag otherwise.
 		'title' => '',
