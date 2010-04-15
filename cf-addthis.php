@@ -28,7 +28,7 @@ function cfat_get_url($url, $title = '', $service = '') {
 		$q['title'] = $title;
 	}
 	// Turn it into HTTP query get string
-	$query = http_build_query($q, '&amp;');
+	$query = http_build_query($q, null, '&amp;');
 	
 	$api_url = apply_filters('cfat_api_url', 'http://api.addthis.com/oexchange/0.8/');
 	$endpoint_generic = apply_filters('cfat_api_endpoint_generic', $api_url.'offer%s', $api_url);
